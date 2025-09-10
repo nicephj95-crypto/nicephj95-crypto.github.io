@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Main </title>
+
+       <style>
+ /* 전체 페이지 */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  text-align: center;   /* 상단 글씨들 가운대 */
+  padding: 20px;
+}
+
+/* 카드들을 묶는 컨테이너 */
+.card-container {
+  display: flex;
+  justify-content: center;   /* 가로(X축) 가운데 */
+  gap: 20px;                 /* 카드 간 간격 */
+  margin-top: 30px;          /* 위쪽 글씨와 간격 */
+}
+
+/* 개별 카드 */
+.card {
+  width: 240px;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.05);
+  text-align: center;   /* 카드 안 내용도 가운대 */
+}
+
+.card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 6px 0 12px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #374151;
+}
+
+.card input[type="button"] {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  background: linear-gradient(#fefefe, #f4f4f5);
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+
+</style>
+
+
+
+       
+    </head>
+    <body>
+       <h1>박로운의 포트폴리오</h1>
+        <div>
+        안녕하세요 열심히 하는 개발자 <br>
+        박로운입니다 <br>
+        제 포트폴리오들을 소개합니다
+        
+        </div>
+
+        <div class="card-container">
+        <div class="card">
+            <img src="./img/redRacket.png">
+            <p>테니스 마켓</p>
+            <input type="button" value="보러가기" onclick="location.href='./main.html'">
+        </div>
+
+        <div class="card">
+            <img src="./img/webtoon.jpg">
+            <p>웹툰 평가 공유 사이트(미정)</p>
+            <input type="button" value="보러가기" onclick="location.href='./webtoon.html'">
+        </div>
+
+        <div class="card">
+            <img src="./img/game.png">
+            <p>게임 공략 사이트(미정)</p>
+            <input type="button" value="보러가기" onclick="location.href='./game.html'">
+        </div>
+        </div>
+
+    </body>
+</html>
